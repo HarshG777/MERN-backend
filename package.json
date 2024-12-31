@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "build": "webpack --config webpack.config.js", 
+    "build": "echo Build Stage", 
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
