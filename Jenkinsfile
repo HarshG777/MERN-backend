@@ -29,7 +29,7 @@ pipeline {
         stage('Lint') {
             steps {
                 bat '''
-                set PATH=%NODEJS_HOME%;%PATH%
+                set PATH=%WORKSPACE%\\node_modules\\.bin;%PATH%
                 npm run lint
                 '''
             }
