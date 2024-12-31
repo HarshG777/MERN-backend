@@ -35,7 +35,7 @@ pipeline {
         //     }
         // }
 
-        stage('Build') {
+        stage('build') {
             steps {
                 bat '''
                 set PATH=%NODEJS_HOME%;%PATH%
