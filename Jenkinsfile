@@ -26,6 +26,15 @@ pipeline {
             }
         }
 
+        stage('Lint') {
+            steps {
+                bat '''
+                    set PATH=%WORKSPACE%\\node_modules\\.bin;%PATH%
+                    npm run lint
+                    '''
+                }
+        }
+
         stage('build') {
             steps {
                 bat '''
