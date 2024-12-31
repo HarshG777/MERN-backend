@@ -30,6 +30,7 @@ pipeline {
             steps {
                 bat '''
                     set PATH=%WORKSPACE%\\node_modules\\.bin;%PATH%
+                    npm install eslint --save-dev
                     npm run lint
                     '''
                 }
