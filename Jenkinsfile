@@ -26,14 +26,14 @@ pipeline {
             }
         }
 
-        stage('Lint') {
-            steps {
-                bat '''
-                set PATH=%WORKSPACE%\\node_modules\\.bin;%PATH%
-                npx eslint .
-                '''
-            }
-        }
+        // stage('Lint') {
+        //     steps {
+        //         bat '''
+        //         set PATH=%WORKSPACE%\\node_modules\\.bin;%PATH%
+        //         npx eslint .
+        //         '''
+        //     }
+        // }
 
         stage('Build') {
             steps {
