@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'sonarnode'
+        nodejs 'sonarnode'  // Ensures NodeJS is installed on the agent
     }
 
     environment {
