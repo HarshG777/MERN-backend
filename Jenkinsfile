@@ -30,7 +30,7 @@ pipeline {
             steps {
                 bat '''
                 set PATH=%WORKSPACE%\\node_modules\\.bin;%PATH%
-                npx lint
+                npx eslint .
                 '''
             }
         }
